@@ -2,7 +2,7 @@
 
 **This repository contains no application source code, and never should.**
 
-It exists only to run GitHub Actions builds for **InstaFarms/mago-host**, which is
+It exists only to run GitHub Actions builds for **InstaFarms/koha-host**, which is
 private. GitHub Actions minutes on standard runners — including macOS — are free
 for public repositories, so keeping the harness public and the code private
 gives unlimited iOS and Android builds at no cost.
