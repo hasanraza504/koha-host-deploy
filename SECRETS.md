@@ -11,7 +11,7 @@ there.
 
 | Name | Value for this repo |
 |---|---|
-| `SOURCE_REPO` | `InstaFarms/mago-host` |
+| `SOURCE_REPO` | `InstaFarms/koha-host` |
 
 ## Secrets (Settings → Secrets)
 
@@ -19,7 +19,7 @@ there.
 
 | Name | What it is |
 |---|---|
-| `SOURCE_REPO_SSH_KEY` | Private half of a **read-only deploy key** on `InstaFarms/mago-host` |
+| `SOURCE_REPO_SSH_KEY` | Private half of a **read-only deploy key** on `InstaFarms/koha-host` |
 | `EXPO_TOKEN` | Expo access token (`expo.dev` → Account → Access tokens) |
 | `RCLONE_CONFIG_ONEDRIVE` | An rclone config whose `[builds]` remote is pinned to the OneDrive `app-builds` folder |
 
@@ -69,11 +69,11 @@ not a permission boundary — keep the secret tight and rotate it if in doubt.
 ## The deploy key
 
 `SOURCE_REPO_SSH_KEY` holds the private half of an ed25519 deploy key registered
-on `InstaFarms/mago-host` with **write access disabled**. This is deliberately preferred
+on `InstaFarms/koha-host` with **write access disabled**. This is deliberately preferred
 over a personal access token:
 
 - it is bound to one repository and cannot reach any other,
 - it is read-only, so it cannot push, tag or delete,
 - it belongs to no user, so revoking it locks out nobody.
 
-Revoke or rotate it under `InstaFarms/mago-host` → Settings → Deploy keys.
+Revoke or rotate it under `InstaFarms/koha-host` → Settings → Deploy keys.
